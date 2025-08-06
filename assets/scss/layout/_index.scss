@@ -1,0 +1,232 @@
+.index-banner {
+  background-image: url(/assets/images/banner.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+  .banner-text {
+    margin-left: 50%;
+    transform: translateX(-480px);
+    h1,
+    h4 {
+      color: $neutral-0;
+    }
+  }
+}
+@media (max-width: 998px) {
+  .index-banner {
+    .banner-text {
+      margin-left: 0;
+      transform: translateX(0px);
+      padding-left: 12px;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .index-banner {
+    background-image: url(/assets/images/banner-sm.png);
+  }
+}
+
+.new {
+  h2,
+  h3 {
+    color: $neutral-900;
+    text-align: center;
+  }
+  .card {
+    p {
+      color: $neutral-900;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .new {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h2.display2 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+    h3.H2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    .col-6 {
+      &:nth-child(1) {
+        margin-bottom: 24px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.hot {
+  h3 {
+    color: $neutral-900;
+  }
+  .card {
+    position: relative;
+    img {
+      display: block;
+    }
+    span {
+      display: block;
+      color: $primary-400;
+      background-color: $primary-100;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .hot {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .row {
+      flex-wrap: nowrap;
+      margin-left: -8px;
+      margin-right: -8px;
+      overflow: auto;
+    }
+    .col-3 {
+      min-width: 316px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
+
+.sale {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url(/assets/images/banner-co-branded.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .activity-title {
+    h1 {
+      color: $neutral-0;
+    }
+    p {
+      color: $primary-300;
+    }
+  }
+  h3 {
+    color: $neutral-0;
+    text-align: center;
+  }
+  p {
+    color: $neutral-500;
+    text-align: center;
+  }
+}
+.star {
+  position: absolute;
+  width: 48px;
+  left: calc(50% - 397px);
+  top: 68px;
+}
+.sparkle {
+  width: 76px;
+  position: absolute;
+  bottom: 132px;
+  right: calc(50% - 357px);
+}
+@media (max-width: 767px) {
+  .sale-wrap {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .sale {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    background-image: url(/assets/images/banner-co-branded-sm.png);
+    .activity-title {
+      flex-direction: column;
+      h1 {
+        font-size: 32px;
+        margin-right: 0;
+      }
+      p {
+        font-size: 28px;
+        margin-right: 0;
+        margin-bottom: 0;
+      }
+    }
+    h3 {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+    overflow: hidden;
+  }
+  .star {
+    top: 32px;
+    left: -20px;
+  }
+  .sparkle {
+    bottom: 104px;
+    right: -28px;
+  }
+}
+
+.series {
+  .card {
+    position: relative;
+  }
+  .series-name {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: $neutral-0;
+  }
+}
+@media (max-width: 998px) {
+  .series {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .row {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  .col-3 {
+    width: calc(100% / 12 * 6);
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 12px;
+    .series-name {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .row-sm {
+    overflow: auto;
+    flex-wrap: nowrap;
+    margin-right: -8px;
+    margin-left: -8px;
+    img {
+      min-width: 300px;
+    }
+  }
+  .col-4-sm,
+  .col-6-sm,
+  .col-12-sm {
+    width: unset;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

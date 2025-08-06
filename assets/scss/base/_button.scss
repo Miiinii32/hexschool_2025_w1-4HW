@@ -1,0 +1,96 @@
+//btn
+.btn {
+  a {
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: $radius-sm;
+  }
+  .btnIcon-l {
+    margin-right: 8px;
+  }
+  .btnIcon-r {
+    margin-left: 8px;
+  }
+}
+
+//large_btn
+.lgBtn {
+  a {
+    padding: 12px 24px;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+
+//small_btn
+.smBtn {
+  a {
+    padding: 8px 16px;
+  }
+  i {
+    font-size: 16px;
+  }
+}
+
+//primary_btn
+.pBtn {
+  a {
+    color: $neutral-900;
+    background-color: $primary-300;
+    &:hover {
+      color: $primary-500;
+    }
+    &:focus {
+      color: $primary-500;
+      box-shadow: 0px 0px 0px 3px rgba(192, 250, 115, 0.4);
+    }
+  }
+}
+
+//neutral_btn_filled
+.nBtnFilled {
+  a {
+    color: $neutral-0;
+    background-color: $neutral-900;
+    &:hover {
+      background-color: $neutral-700;
+    }
+    &:focus {
+      background-color: $neutral-700;
+      box-shadow: 0px 0px 0px 3px rgba(33, 37, 41, 0.1);
+    }
+  }
+}
+
+//neutral_btn_outlined
+.nBtnOutlined {
+  a {
+    color: $neutral-900;
+    background-color: $neutral-0;
+    border: 1px solid $neutral-900;
+    &:hover {
+      color: $neutral-0;
+      background-color: $neutral-900;
+    }
+    &:focus {
+      color: $neutral-0;
+      background-color: $neutral-900;
+      box-shadow: 0px 0px 0px 3px rgba(33, 37, 41, 0.1);
+    }
+  }
+}
+
+//btnIcon
+.btnIcon-l-lg,
+.btnIcon-r-lg {
+  i {
+    font-size: 20px;
+  }
+}
+.btn-icon-l-sm,
+.btn-icon-r-sm {
+  i {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入頁面</title>
+  </head>
+  <body>
+    <%- include("./layout/nav") %>
+
+    <main>
+      <div class="login container-lg py-64">
+        <div class="row">
+          <div class="col-5">
+            <picture>
+              <source
+                media="(max-width: 767px)"
+                srcset="/assets/images/login-sm.png"
+              />
+              <img src="/assets/images/login.png" alt="login" />
+            </picture>
+          </div>
+          <div class="col-7">
+            <div class="content d-flex-col-cn px-80">
+              <h1 class="H3 mb-32">歡迎！</h1>
+              <div class="tab d-flex mb-32">
+                <a class="login H6 py-12" href="./login.html">登入</a>
+                <a class="H6 py-12" href="./register.html">註冊</a>
+              </div>
+              <div class="social-media">
+                <a class="P-md pd-12 mb-8 d-flex">
+                  <img
+                    class="mr-12"
+                    src="/assets/images/facebook.svg"
+                    alt=""
+                  />Facebook 登入
+                </a>
+                <a class="P-md pd-12 mb-8 d-flex">
+                  <img
+                    class="mr-12"
+                    src="/assets/images/apple.svg"
+                    alt=""
+                  />Apple 登入
+                </a>
+                <a class="P-md pd-12 d-flex">
+                  <img
+                    class="mr-12"
+                    src="/assets/images/google.svg"
+                    alt=""
+                  />Google 登入
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include("./layout/footer") %>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

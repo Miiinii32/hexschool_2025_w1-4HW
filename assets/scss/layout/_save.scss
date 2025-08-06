@@ -1,0 +1,63 @@
+.save {
+  h1 {
+    align-self: center;
+    color: $neutral-900;
+    i {
+      font-size: 24px;
+      width: 40px;
+      height: 40px;
+      background-color: $primary-300;
+      color: $primary-500;
+      border-radius: $radius-rounded;
+    }
+  }
+  .time {
+    color: $primary-500;
+    background-color: $primary-100;
+    i {
+      font-size: 24px;
+    }
+    p {
+      flex-wrap: wrap;
+    }
+  }
+  .list {
+    border-bottom: 1px solid $neutral-300;
+    img {
+      width: 120px;
+      height: 120px;
+      background-color: rgba(240, 243, 247, 1);
+    }
+    .content {
+      width: 100%;
+    }
+    h2 {
+      color: $neutral-900;
+    }
+    p {
+      color: $neutral-600;
+      background-color: transparent;
+      span {
+        color: $neutral-900;
+      }
+    }
+    .price {
+      color: $neutral-900;
+      align-self: flex-end;
+    }
+  }
+  .btn {
+    i {
+      display: none;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .save {
+    .list {
+      .price {
+        align-self: flex-start;
+      }
+    }
+  }
+}

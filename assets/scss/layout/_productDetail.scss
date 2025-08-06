@@ -1,0 +1,98 @@
+.detail {
+  .breadcrumb {
+    p {
+      color: $neutral-300;
+    }
+    h3 {
+      color: $neutral-600;
+    }
+    .focus {
+      color: $neutral-900;
+    }
+  }
+  h1 {
+    color: $neutral-900;
+  }
+  p {
+    color: $neutral-900;
+  }
+  h2 {
+    color: $primary-400;
+    span {
+      color: $neutral-500;
+      text-decoration: line-through;
+    }
+  }
+  .remaining {
+    color: rgba(215, 79, 79, 1);
+  }
+  .btn {
+    flex: 1;
+    a {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  .accordion {
+    h4 {
+      color: $neutral-900;
+    }
+    p {
+      color: $neutral-600;
+      border-bottom: 1px solid $neutral-300;
+    }
+  }
+  h6 {
+    color: $neutral-900;
+  }
+  .recommend {
+    p {
+      color: $neutral-900;
+    }
+  }
+}
+.banner {
+  margin-top: 40px;
+}
+@media (max-width: 992px) {
+  .detail {
+    .row {
+      flex-direction: column;
+    }
+    .list.col-7,
+    .product-intro.col-5 {
+      width: 100%;
+    }
+    .product-intro.col-5 {
+      margin-top: 32px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .detail {
+    .n-display {
+      display: none;
+    }
+    .row {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+    .list {
+      .col-6-sm {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .option-wrap {
+      .col-4-sm {
+        width: calc(100% / 12 * 6);
+      }
+    }
+    .recommend {
+      .col-3 {
+        width: calc(100% / 12 * 12);
+      }
+    }
+  }
+}

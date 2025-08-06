@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>產品列表頁</title>
+  </head>
+  <body>
+    <%- include("./layout/nav") %>
+
+    <main>
+      <div class="product container-lg pt-32 pb-80">
+        <div class="breadcrumb d-flex mb-24">
+          <h3 class="Label-md">首頁</h3>
+          <p class="H6 mx-12">/</p>
+          <h3 class="Label-md">女鞋</h3>
+          <p class="H6 mx-12">/</p>
+          <h3 class="Label-md focus">所有商品</h3>
+        </div>
+        <h1 class="H3 mb-24">女鞋</h1>
+        <div class="row">
+          <div class="menu col-2">
+            <h3 class="Label-md focus py-12 mb-16">所有商品</h3>
+            <h3 class="Label-md py-12 mb-16">慢跑鞋</h3>
+            <h3 class="Label-md py-12 mb-16">滑板鞋</h3>
+            <h3 class="Label-md py-12 mb-16">厚底鞋</h3>
+            <h3 class="Label-md py-12">限定 / 聯名企劃</h3>
+          </div>
+          <div class="list col-10 d-flex-col-cc">
+            <div class="row mb-48">
+              <div class="col-4 mb-48">
+                <div class="card">
+                  <a href="./productDetail.html">
+                    <img
+                      class="mb-12"
+                      src="/assets/images/product.png"
+                      alt="產品圖"
+                    />
+                    <h2 class="H6 md-4">PLATFORM 404</h2>
+                    <p class="Label-md">NT$2,600</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-4 mb-48">
+                <div class="card">
+                  <img
+                    class="mb-12"
+                    src="/assets/images/product-1.png"
+                    alt="產品圖"
+                  />
+                  <h2 class="H6 md-4">PLATFORM 404</h2>
+                  <p class="Label-md">NT$2,600</p>
+                </div>
+              </div>
+              <div class="col-4 mb-48">
+                <div class="card">
+                  <img
+                    class="mb-12"
+                    src="/assets/images/product-2.png"
+                    alt="產品圖"
+                  />
+                  <h2 class="H6 md-4">VM001</h2>
+                  <p class="Label-md">NT$2,600</p>
+                </div>
+              </div>
+              <div class="col-4 mb-48">
+                <div class="card">
+                  <img
+                    class="mb-12"
+                    src="/assets/images/product-3.png"
+                    alt="產品圖"
+                  />
+                  <h2 class="H6 md-4">Melty Kiss</h2>
+                  <p class="Label-md">NT$4,000</p>
+                </div>
+              </div>
+              <div class="col-4 mb-48">
+                <div class="card">
+                  <img
+                    class="mb-12"
+                    src="/assets/images/product-4.png"
+                    alt="產品圖"
+                  />
+                  <h2 class="H6 md-4">BOOMBLOK</h2>
+                  <p class="Label-md">NT$3,200</p>
+                </div>
+              </div>
+              <div class="col-4 mb-48">
+                <div class="card">
+                  <img
+                    class="mb-12"
+                    src="/assets/images/product-5.png"
+                    alt="產品圖"
+                  />
+                  <h2 class="H6 md-4">BOOMBLOK</h2>
+                  <p class="Label-md">NT$3,200</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img
+                    class="mb-12"
+                    src="/assets/images/product-6.png"
+                    alt="產品圖"
+                  />
+                  <h2 class="H6 md-4">R:UNER</h2>
+                  <p class="Label-md">NT$4,000</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img
+                    class="mb-12"
+                    src="/assets/images/product-7.png"
+                    alt="產品圖"
+                  />
+                  <h2 class="H6 md-4">Sugar Snap</h2>
+                  <p class="Label-md">NT$4,000</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <img
+                    class="mb-12"
+                    src="/assets/images/product-8.png"
+                    alt="產品圖"
+                  />
+                  <h2 class="H6 md-4">Neofoam</h2>
+                  <p class="Label-md">NT$4,000</p>
+                </div>
+              </div>
+            </div>
+            <div class="page d-flex">
+              <a class="d-flex-cc mr-12" href=""
+                ><i class="bi bi-chevron-left"></i
+              ></a>
+              <a class="d-flex-cc mr-8" href="">1</a>
+              <a class="d-flex-cc mr-8" href="">2</a>
+              <a class="d-flex-cc mr-8" href="">3</a>
+              <a class="d-flex-cc mr-8" href="">...</a>
+              <a class="d-flex-cc" href="">10</a>
+              <a class="d-flex-cc ml-12" href=""
+                ><i class="bi bi-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include("./layout/banner")%> <%- include("./layout/footer") %>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

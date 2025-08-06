@@ -1,0 +1,142 @@
+.header {
+  padding-top: 151px;
+  padding-bottom: 151px;
+  background-image: url(/assets/images/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  h1,
+  h2 {
+    text-align: center;
+    color: $neutral-0;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    margin-bottom: 32px;
+    .hero-title {
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .hero-subtitle {
+      font-size: 20px;
+    }
+  }
+}
+
+.blockQuote {
+  background-color: $primary-100;
+  h4 {
+    color: $primary-400;
+  }
+  p {
+    color: $neutral-900;
+  }
+}
+@media (max-width: 767px) {
+  .blockQuote {
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+.about-img {
+  margin-left: -110px;
+  margin-right: -110px;
+}
+@media (max-width: 1076px) {
+  .about-img {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.intro {
+  border-bottom: 1px solid $neutral-300;
+  .title {
+    color: $neutral-900;
+  }
+  .subtitle {
+    color: $primary-400;
+  }
+  p {
+    color: $neutral-900;
+  }
+}
+@media (max-width: 767px) {
+  .intro {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    .title {
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+    p.mb-16 {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.history {
+  border-bottom: 1px solid $neutral-300;
+  li::before {
+    content: "\2022";
+  }
+  //   span {
+  //     display: block;
+  //     padding-right: $sp-xs-8;
+  //     border-right: 1px solid $neutral-900;
+  //     margin-right: 8px;
+  //   }
+}
+@media (max-width: 767px) {
+  .history {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    .title {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.concept {
+  border-bottom: 1px solid $neutral-300;
+  li {
+    border-left: 3px solid $neutral-300;
+  }
+}
+@media (max-width: 767px) {
+  .concept {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    .title {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.story {
+  i {
+    color: $primary-400;
+    overflow: hidden;
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: $primary-400;
+    border-bottom: 1px solid $primary-400;
+  }
+}
+@media (max-width: 767px) {
+  .story {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    .title {
+      margin-bottom: 16px;
+    }
+  }
+}
